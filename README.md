@@ -62,6 +62,30 @@ I would like to be able to select some number of several available dishes
 -->
   It feels like this method will be a massive one so I will attempt to split it's requirements into more methods
 
+- 'select_dishes' method it stores the dishes into an array and returns a message. The quantity parameter is by default set to 1
+
+<!-- 
+Makerss-MacBook-Pro-2:takeaway-challenge student$ irb -r './lib/take_away.rb' 
+2.5.0 :001 > t = TakeAway.new
+ => #<TakeAway:0x00007fa42f907510 @menu=#<Menu:0x00007fa42f9074e8 @menu_list={"spring roll"=>0.99, "char sui bun"=>3.99, "pork dumpling"=>2.99, "peking duck"=>7.99, "fu-king fried rice"=>5.99}>, @order_list=[]> 
+2.5.0 :002 > t.display_menu
+spring roll: 0.99
+char sui bun: 3.99
+pork dumpling: 2.99
+peking duck: 7.99
+fu-king fried rice: 5.99
+ => {"spring roll"=>0.99, "char sui bun"=>3.99, "pork dumpling"=>2.99, "peking duck"=>7.99, "fu-king fried rice"=>5.99} 
+2.5.0 :003 > t.select_dishes('peking duck')
+ => "1 x peking duck(s) added in your basket!" 
+2.5.0 :004 > t.select_dishes('char sui bun', 10)
+ => "10 x char sui bun(s) added in your basket!" 
+2.5.0 :005 > t.select_dishes('pork dumpling', 5)
+ => "5 x pork dumpling(s) added in your basket!" 
+2.5.0 :006 > 
+ -->
+
+
+
 
 
 
