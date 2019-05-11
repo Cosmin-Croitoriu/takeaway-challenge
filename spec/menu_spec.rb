@@ -1,20 +1,11 @@
 require 'menu'
 describe Menu do
-  describe '#display' do
-    it 'displays the menu' do
-
-    expect{subject.display}.to output("spring roll: 0.99\nchar sui bun: 3.99\npork dumpling: 2.99\npeking duck: 7.99\nfu-king fried rice: 5.99\n").to_stdout
-    end 
-  end   
-
+  it ' initalizes with a list of dishes' do
+    expect(subject.menu_list).to eq({"spring roll"=> 0.99, "char sui bun"=>3.99, "pork dumpling"=>2.99, "peking duck"=>7.99, "fu-king fried rice"=>5.99})
+  end
 end
 
 
 
-
-
-# As a customer
-# So that I can check if I want to order something
-# I would like to see a list of dishes with prices
 
 
