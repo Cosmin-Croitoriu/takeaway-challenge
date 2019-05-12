@@ -39,5 +39,17 @@ describe TakeAway do
       expect(subject.basket_summary).to eq("2 x NO SPRING ROLL(s), 1 x peking duck(s) = £9.99")
     end
   end
+
+  describe '#display_total_price' do
+    it "displays the final price for the whole dish selection" do
+      fake_menu = instance_double('Menu', menu_list: MENU_LIST)
+      allow(Menu).to receive(:new).and_return(fake_menu)
+      subject.select_dishes('NO SPRING ROLL', 2)
+      subject.select_dishes('peking duck')
+      subject.basket_summary
+      subject.select_dishes('NO SPRING ROLL', 2)
+      expect(subject.display_total_price).to eq("Total: £11.99")
+    end
+  end
     
 end

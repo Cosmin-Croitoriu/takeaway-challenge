@@ -19,9 +19,11 @@ class TakeAway
   end
   
   def basket_summary
-    dish_price = 0
-    dish_price += @price
-    "#{@order_list.join(', ')} = £#{dish_price}"
+    "#{@order_list.join(', ')} = £#{@price}"
   end
- 
+  
+  def display_total_price
+    "Total: £#{@price}"
+  end
+  
 end

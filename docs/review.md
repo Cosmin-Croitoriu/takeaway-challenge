@@ -44,7 +44,7 @@ The README is a great place to show the full story of how your app is used (from
 2.2.3 :007 > t.add 'pork dumpling', 3
  => "3x pork dumpling(s) added to your basket."
 2.2.3 :008 > t.basket_summary
- => "spring roll x4 = £3.96, pork dumpling x3 = £8.97"
+ => "k dumpling x3 = £8spring roll x4 = £3.96, por.97"
 2.2.3 :009 > t.total
  => "Total: £12.93"
 2.2.3 :010 > c.checkout(12.93)
