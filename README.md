@@ -83,6 +83,28 @@ fu-king fried rice: 5.99
  => "5 x pork dumpling(s) added in your basket!" 
 2.5.0 :006 > 
  -->
+- I have implemented the basked summary that displays the orders selected and the price so far 
+
+<!-- 
+Makerss-MacBook-Pro-2:takeaway-challenge student$ irb -r './lib/take_away.rb' 
+2.5.0 :001 > t = TakeAway.new
+ => #<TakeAway:0x00007fb58b82b110 @menu=#<Menu:0x00007fb58b82aff8 @menu_list={"spring roll"=>0.99, "char sui bun"=>3.99, "pork dumpling"=>2.99, "peking duck"=>7.99, "fu-king fried rice"=>5.99}>, @order_list=[], @price=0> 
+2.5.0 :002 > t.select_dishes('char sui bun', 10)
+ => "10 x char sui bun(s) added in your basket!" 
+2.5.0 :003 > t.select_dishes('peking duck')
+ => "1 x peking duck(s) added in your basket!" 
+2.5.0 :004 > t.basket_summary
+ => "10 x char sui bun(s), 1 x peking duck(s) = £47.89000000000001" 
+2.5.0 :005 > t.select_dishes('peking duck')
+ => "1 x peking duck(s) added in your basket!" 
+2.5.0 :006 > t.select_dishes('char sui bun', 10)
+ => "10 x char sui bun(s) added in your basket!" 
+2.5.0 :007 > t.basket_summary
+ => "10 x char sui bun(s), 1 x peking duck(s), 1 x peking duck(s), 10 x char sui bun(s) = £95.78000000000002" 
+2.5.0 :008 >  
+-->
+
+
 
 
 
