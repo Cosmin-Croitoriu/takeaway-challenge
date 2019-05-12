@@ -6,6 +6,7 @@ class TakeAway
     @menu = Menu.new
     @order_list = []
     @price = 0
+    # @message = Message.new
   end
 
   def display_menu

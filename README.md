@@ -125,6 +125,9 @@ Makerss-MacBook-Pro-2:takeaway-challenge student$ irb -r './lib/take_away.rb'
 2.5.0 :008 >  
 -->
 
+- Implemented the class TextMessage using the Twilio API and ENV variables(lots of fun)
+I have not delegated it in any way yet to the TakeAway class. That would be my next step.
+
 
 
 
