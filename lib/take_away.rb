@@ -1,4 +1,5 @@
 require_relative 'menu'
+require_relative 'text_message'
 class TakeAway
   attr_reader :order_list
   
@@ -6,7 +7,7 @@ class TakeAway
     @menu = Menu.new
     @order_list = []
     @price = 0
-    # @message = Message.new
+    @message = TextMessage.new
   end
 
   def display_menu
@@ -26,5 +27,13 @@ class TakeAway
   def display_total_price
     "Total: £#{@price}"
   end
-  
+
+  def checkout(sum)
+    fail "The sum is not correct" unless sum == @price
+    complete_order
+  end
+
+  def complete_order
+    @message.send
+  end
 end

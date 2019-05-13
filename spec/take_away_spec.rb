@@ -3,7 +3,7 @@ require 'take_away'
 describe TakeAway do
   MENUSTRING = "NO SPRING ROLL: 1.0\nchar sui bun: 3.99\npork dumpling: 2.99\npeking duck: 7.99\nfu-king fried rice: 5.99\n"
   MENU_LIST = { "NO SPRING ROLL" => 1.0, "char sui bun" => 3.99, "pork dumpling" => 2.99, "peking duck" => 7.99, "fu-king fried rice" => 5.99 }
-
+  TEXT = "Your order is on the way!"
   describe '#display_menu' do
     it "displays a list of dishes" do
       fake_menu = instance_double('Menu', menu_list: MENU_LIST)
@@ -51,5 +51,22 @@ describe TakeAway do
       expect(subject.display_total_price).to eq("Total: £11.99")
     end
   end
-    
+
+  describe '#checkout' do
+   
+    it "raises an error if the price is not correct" do
+      expect { subject.checkout(5) }.to raise_error("The sum is not correct")
+    end
+  end
+#  haven't managed to stub the "complete_order" method, keeps sending me messages
+  describe '#complete_order' do
+    let(:message) { double :message }
+    before do
+      allow(message).to receive(:send)
+    end
+    it "sends a confirmation text message" do
+      expect(message).to receive(:send).with("Thank you for your order: £20.93")
+      subject.complete_order
+    end  
+  end
 end

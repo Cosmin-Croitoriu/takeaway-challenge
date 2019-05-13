@@ -1,8 +1,8 @@
-# require 'take_away'
-require("bundler")
-Bundler.require()
+require 'twilio-ruby'
+require 'dotenv'
 
 class TextMessage
+  Dotenv.load('twilio.env')
   FROM = ENV['TWILIO_NUMBER']
   TO = ENV["MY_PHONE_NUMBER"]
 
@@ -11,11 +11,11 @@ class TextMessage
     @client = client
   end
 
-  def send(text)
+  def send
     @client.messages.create(
     to: TO,
     from: FROM,
-    body: text
+    body: 'Your order has been placed and will be delivered in 30 minutes'
     )
   end
 end
