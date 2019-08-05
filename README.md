@@ -1,4 +1,6 @@
-                                     _________
+                                                # Takeaway Challenge
+          
+          _________
               r==           |       |
            _  //            |  ..   |   ))))
           |_)//(''''':      |       |
@@ -44,7 +46,7 @@ I would like to receive a text such as "Thank you! Your order was placed and wil
 
 
 
-  ##Approach 
+  ## Approach:
 
 In this file I will list the procedures I have used in order to complete this challenge.
 
