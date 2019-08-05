@@ -1,4 +1,50 @@
+                                     _________
+              r==           |       |
+           _  //            |  ..   |   ))))
+          |_)//(''''':      |       |
+            //  \_____:_____.-------D     )))))
+           //   | ===  |   /        \
+       .:'//.   \ \=|   \ /  .:'':./    )))))
+      :' // ':   \ \ ''..'--:'-.. ':
+      '. '' .'    \:.....:--'.-'' .'
+       ':..:'                ':..:'
+       
+Takeaway Challenge is a Makers kata, in which is introduced the use of Api for recieving text messages using Twilio API and secure sensitive information using ENV variables(lots of fun).
+   The app is used in Interactive Ruby Shell(irb).
 
+This Takeaway program is satisfying these user stories:
+
+As a customer
+So that I can check if I want to order something
+I would like to see a list of dishes with prices
+
+As a customer
+So that I can order the meal I want
+I would like to be able to select some number of several available dishes
+
+As a customer
+So that I can verify that my order is correct
+I would like to check that the total I have been given matches the sum of the various dishes in my order
+
+As a customer
+So that I am reassured that my order will be delivered on time
+I would like to receive a text such as "Thank you! Your order was placed and will be delivered before 18:52
+
+
+
+  ## Instructions:
+  
+  * Clone the repo and  run "bundle install" in your terminal to install all the required gems.
+  * A free account on Twilio will only allow you to send texts to "verified" numbers
+  * Use Environmental Variables to encode your sensitive information (phone number, Twilio phone number and API)
+
+
+
+
+
+
+
+  ##Approach 
 
 In this file I will list the procedures I have used in order to complete this challenge.
 
