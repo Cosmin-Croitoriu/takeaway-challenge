@@ -11,8 +11,9 @@
       '. '' .'    \:.....:--'.-'' .'
        ':..:'                ':..:'
        
-    Takeaway Challenge is a Makers kata, in which is introduced the use of Api for recieving text messages using Twilio API and secure sensitive information using ENV variables(lots of fun).
-   The app is developed using TDD and Ruby (Rspec as the testing framework) and is being used in Interactive Ruby Shell(irb).
+   
+   Takeaway Challenge is a Makers kata, in which is introduced the use of Api for recieving text messages using Twilio API and secure sensitive information using ENV variables(lots of fun). The app is developed using TDD and Ruby (Rspec as the testing framework) and is being used in Interactive Ruby Shell(irb).
+
 
 This Takeaway program is satisfying these user stories:
 
