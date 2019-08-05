@@ -12,7 +12,7 @@
        ':..:'                ':..:'
        
    
-   Takeaway Challenge is a Makers kata, in which is introduced the use of Api for recieving text messages using Twilio API and secure sensitive information using ENV variables(lots of fun). The app is developed using TDD and Ruby (Rspec as the testing framework) and is being used in Interactive Ruby Shell(irb).
+   Takeaway Challenge is a Makers kata, in which is introduced the use of Api for recieving text messages using Twilio API and secure sensitive information using ENV variables. The app is developed using TDD and Ruby (Rspec as the testing framework) and is being used in Interactive Ruby Shell(irb).
 
 
 This Takeaway program is satisfying these user stories:
@@ -174,7 +174,7 @@ Makerss-MacBook-Pro-2:takeaway-challenge student$ irb -r './lib/take_away.rb'
 2.5.0 :008 >  
 -->
 
-- Implemented the class TextMessage using the Twilio API and ENV variables(lots of fun)
+- Implemented the class TextMessage using the Twilio API and ENV variables
 I have not delegated it in any way yet to the TakeAway class. That would be my next step.
 
 
